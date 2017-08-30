@@ -1,5 +1,11 @@
 * {
-    font-family: Arial, Verdana, sans-serif;}
+    font-family: Arial, Verdana, sans-serif;}   
 h1 {font-family: Courier New, monospace;}
+h1 {
+    text-align: center;
+}
 i {color: orangered}
 i {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+h3 {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+h3 {color: #2D8B9E}
+h3 {text-align: center}

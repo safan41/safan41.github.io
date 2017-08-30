@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <title> Not maps </title>
+  <title>No Maps</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 <meta content="utf-8" http-equiv="encoding">
   <head>
+    <link href="boi.css" type="text/css" rel="stylesheet" />
     <style>
        #map {
         height: 400px;
         width: 100%;
        }
     </style>
-    <link href="boi.css" type="text/css" rel="stylesheet" />
+    
   </head>
   <body>
     <h3>My Google map</h3>
     <div id="map"></div>
     <script>
       function initMap() {
-        var uluru = {lat: 37.3230, lng: 122.0322};
+        var uluru = {lat: 37.3230, lng: -122.0322};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 4,
           center: uluru
@@ -31,5 +32,13 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDxnnjUltOOC9DVYjTxEtPHTankEtCCkog &callback=initMap">
     </script>
+    <div>
+    <link href="meme.css" type="text/css" rel="stylesheet" />
+    <ul>
+        <li> <a href="index.html" /> Home </li>
+        <li> <a href="boi.html" /> Maps </li>
+        <li> <a href="hbrewdoc.html" /> 3dbrew </li>
+    </ul>
+    </div>
   </body>
 </html>
