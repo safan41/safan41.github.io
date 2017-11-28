@@ -11,16 +11,20 @@
     <link href="gobble.css" type="text/css" rel="stylesheet" />
     <link href="meme.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+    </head>
+    <body>
+        <div id="mem">
      <script>
 function myFunction() {
     var x = document.getElementById("meme")
     x.innerHTML = Math.floor((Math.random() * 100) + 1);
 }
 </script>   
-</head>
-<body>
+
+
     <button onclick="myFunction()">Your lucky number of the day is...</button>
     <p id="meme"></p>
+        </div>
     <div id="date"><script>
             var today = new Date();
                     var dd = today.getDate();
