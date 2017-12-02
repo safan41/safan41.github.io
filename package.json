@@ -1,52 +1,26 @@
-s (61 sloc) 1.65 KB
 {
-  "name": "safan41.gtihub.io",
-  "description": "Safan41's website",
-  "keywords": [
-    "safan41",
-    "safan41 gtihub"
-  ],
-  "version": "3.0.0",
-  "bugs": {
-    "url": "https://github.com/safan41/safan41.github.io/issues"
-  },
-  "scripts": {
-    "test": "snyk test && make test"
-  },
-  "bin": {
-    "safan41": "./index.js"
-  },
-  "maintainers": [
-    "Safan41 <safan25641@gmail.com> (https://safan41.gtihub.io)"
-  ],
- 
-  "dependencies": {
-    "js-yaml": "^3.6.1",
-    "lcov-parse": "^0.0.10",
-    "log-driver": "^1.2.5",
-    "minimist": "^1.2.0",
-    "request": "^2.79.0"
-  },
-  "devDependencies": {
-    "istanbul": "^0.4.5",
-    "jshint": "2.9.3",
-    "mocha": "^3.2.0",
-    "mocha-lcov-reporter": "^1.2.0",
-    "should": "^9.0.2",
-    "sinon-restore": "^1.0.1",
-    "snyk": "^1.23.3"
-  },
-  "engines": {
-    "node": ">=4.0.0"
-  },
+  "name": "safan41",
+  "version": "1.0.0",
+  "description": "Safan41's official website",
   "main": "index.js",
-  "directories": {
-    "test": "test"
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm install coveralls --save-dev"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/safan41/safan41.github.com.git"
+    "url": "git+https://github.com/safan41/safan41.github.io.git"
   },
-  "author": "Gregg Caines",
-  "license": "MIT"
+  "keywords": [
+    "Safan41",
+    "Safan41",
+    "website"
+  ],
+  "author": "Safan41",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/safan41/safan41.github.io/issues"
+  },
+  "homepage": "https://github.com/safan41/safan41.github.io#readme"
 }
