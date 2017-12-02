@@ -24,4 +24,6 @@
   },
   "homepage": "https://github.com/safan41/safan41.github.io#readme"
 }
-"npm install coveralls --save-dev"
+{
+  "install" "npm install coveralls --save-dev"
+}
