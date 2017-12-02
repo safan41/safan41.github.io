@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Safan41's official website",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {coveralls},
   "devDependencies": {},
   "scripts": {
     "test": "npm install coveralls --save-dev"
