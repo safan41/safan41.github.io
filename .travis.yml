@@ -2,10 +2,4 @@ language: node_js
 node_js:
   - "iojs"
   - "7"
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: c9fd9d7849ee34948334f8bfac87319bf135ca52
-  local_dir: /
-  on:
-    branch: master
+
