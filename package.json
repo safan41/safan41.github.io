@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Safan41's official website",
   "main": "index.js",
-  "dependencies": {coveralls},
+  "dependencies": {"coveralls": "^2.12.0"},
   "devDependencies": {},
   "scripts": {
     "test": "npm install coveralls --save-dev"
@@ -23,7 +23,4 @@
     "url": "https://github.com/safan41/safan41.github.io/issues"
   },
   "homepage": "https://github.com/safan41/safan41.github.io#readme"
-}
-{
-  "install" "npm install coveralls --save-dev"
 }
