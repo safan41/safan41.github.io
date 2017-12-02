@@ -14,7 +14,7 @@ s (61 sloc) 1.65 KB
     "test": "snyk test && make test"
   },
   "bin": {
-    "coveralls": "./bin/coveralls.js"
+    "safan41": "./index.js"
   },
   "maintainers": [
     "Safan41 <safan25641@gmail.com> (https://safan41.gtihub.io)"
