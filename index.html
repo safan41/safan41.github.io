@@ -1,5 +1,70 @@
 <DOCTYPE! html>
 <html>
-<h1> Error 404 </h1>
-<p> Page not founds </p>
+    <head>
+    <title>Nothing</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<meta name="author" content="Safwan Morshed"/>
+<meta name="description" content="This is the main page for Safan41's Github repo documentation."/>
+<meta name="keywords" content="safan41, safwan, morshed,"/>
+    <link href="index.css" type="text/css" rel="stylesheet" />
+    <link href="gobble.css" type="text/css" rel="stylesheet" />
+    <link href="meme.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+    </head>
+    <body>
+        <div id="mem">
+     <script>
+function myFunction() {
+    var x = document.getElementById("meme")
+    x.innerHTML = Math.floor((Math.random() * 100) + 1);
+}
+</script>   
+
+
+    <button onclick="myFunction()">Your lucky number of the day is...</button>
+    <p id="meme"></p>
+        </div>
+    <div id="date"><script>
+            var today = new Date();
+                    var dd = today.getDate();
+                    var mm = today.getMonth()+1; //January is 0!
+                    var yyyy = today.getFullYear();
+                    
+                    if(dd<10) {
+                        dd = '0'+dd
+                    } 
+                    
+                    if(mm<10) {
+                        mm = '0'+mm
+                    } 
+                    
+                    today = mm + '/' + dd + '/' + yyyy;
+                    document.write(today);
+                    </script>
+                    </div>
+      <script src="time.js"></script>
+      <body onload="startTime()">
+        <div id="txt"></div>
+        <script src='index.js'></script>
+        
+    <h1> MOY WEB </h1>
+<p id="intro">Hello! I am  <i>Safan41</i> here to test out <b>my</b> website </p>
+<h3></h3>
+
+<p> Hello there! This will be updated. </p>
+ <div>
+       
+     <ul>
+             <li> <a href="index.html" /> Home </li>
+             <li> <a href="boi.html" /> Maps </li>
+             <li> <a href="https://safan41.github.io/33/" /> 3dbrew Docs </li>
+             <li> <a href="audio.html" /> Audio Player </li>
+             <li> <a href="unfairmario.html"/> Unfair Mario</li>
+             <li><a href="yt.html"/> Homebrew Videos</li>
+         <li><a href="https://safan41.github.io/candybox2.github.io/"/> Candy Box 2</li>
+         <li><a href="calc.html"/> Calculator</li>
+          </ul>
+ </div>
+</body>
 </html>
