@@ -2,17 +2,12 @@ language: node_js
 node_js:
   - "iojs"
   - "7"
-  install:
-  - npm install;
-    npm install travis-github-lint-status
-script:
-  - ./node_modules/travis-github-lint-status/index.js
-  - npm run coverage
-  - npm run lint
-  - npm run build
-  - npm test
- 
-
+  before_install: if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
+cache:
+  directories:
+    - node_modules
+sudo: false
 after_script:
 - "npm run test:cov"
 - "npm install coveralls && cat ./coverage/lcov.info | coveralls"
+
