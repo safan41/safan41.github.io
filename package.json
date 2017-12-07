@@ -13,7 +13,7 @@
     "lint": "eslint . --ext .json --ext .md",
     "pretest": "npm run lint",
     "test": "echo \"No tests\""
-    "test": "npm install coveralls --save-dev"
+   "npm install coveralls --save-dev"
   },
   "repository": {
     "type": "git",
