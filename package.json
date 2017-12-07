@@ -1,0 +1,26 @@
+{
+  "name": "safan41",
+  "version": "1.0.0",
+  "description": "Safan41's official website",
+  "main": "index.js",
+  "dependencies": {"coveralls": "^2.12.0"},
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm install coveralls --save-dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/safan41/safan41.github.io.git"
+  },
+  "keywords": [
+    "Safan41",
+    "Safan41",
+    "website"
+  ],
+  "author": "Safan41",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/safan41/safan41.github.io/issues"
+  },
+  "homepage": "https://github.com/safan41/safan41.github.io#readme"
+}

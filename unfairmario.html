@@ -1,0 +1,1408 @@
+
+<!DOCTYPE html>
+<html>
+<head><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+
+<script>addEventListener('error', window.__e=function f(e){f.q=f.q||[];f.q.push(e)});</script>
+<link rel="shortcut icon" href="https://cg-images-1.imgix.net/favicon.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=16" type="image/png" />
+<meta http-equiv="Accept-CH" content="DPR">
+<title>Unfair Mario - Play Unfair Mario on Crazy Games</title>
+<meta name="description" content="Never has a game been so frustrating, yet so addictive, as this one. Unfair Mario takes the adventures of everyone's favorite plumber and flips them into a world of surprise falls, sudden traps and slew of other unexpected instant deaths! You'll be torn between wanting to smash your keyboard or hit that end goal just inches away. There are infinite lives, because you'll need every one. In Unfair Mario nothing is as it seems anymore... Find the final flag while avoiding the hidden traps. Have fun(?) with the unfair version of the classic mario platformer.">
+<link rel="preconnect" href="https://cg-images-1.imgix.net/">
+<link href="/assets/css/new.css?v=1.26" rel="stylesheet">
+<!--[if lt IE 10]>
+            <link rel="stylesheet" type="text/css" href="//www.crazygames.com/assets/css/new-le-ie9.css" />
+        <![endif]-->
+<link rel='preconnect' href='//files.crazygames.com/'>
+<link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAJElEQVR4AWNgbD31Hx8GAkZ8eHgYMGoAQQV+Zf/x4WFhwKgBABzfg58BLs8eAAAAAElFTkSuQmCC">
+<link rel="canonical" href="https://www.crazygames.com/game/unfair-mario" />
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.crazygames.com/game/unfair-mario" />
+<meta name="google-site-verification" content="hBNwKPQSBQf6jUGZNlzW-fyF5sxkEIYZsGhtO-LrSbI" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script >
+<script>
+
+            var TRACKING_VERSION = 3;
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};
+            ga('create', 'UA-44038741-1', 'auto');
+            var gameTechnology = 'FLASH';ga('set', 'dimension2', gameTechnology);ga('set', 'dimension3', 'prebid');ga('set', 'dimension6', 'refresh');ga('set', 'dimension7', '');var gameSlug = 'unfair-mario';            ga('set', 'transport', 'beacon');
+            ga('set', 'dimension5', TRACKING_VERSION);
+
+            // redirect mobile and tablet devices to the mobile site and record event
+            var mobileUrl = 'https://m.crazygames.com/game/unfair-mario?redirect=desktop';
+            function redirectToMobile() {
+              console.log('redirecting to mobile site');
+              window.location=mobileUrl;
+            }
+            (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|android|ipad|playbook|silk|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4)))redirectToMobile()})(navigator.userAgent||navigator.vendor||window.opera);
+
+            ga('require', 'pageVisibilityTracker', {visibleMetricIndex: 3});
+            ga('send', 'pageview');
+        </script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+<link rel="alternate" hreflang="en" href="https://www.crazygames.com/game/unfair-mario" /><link rel="alternate" hreflang="es" href="https://www.1001juegos.com/juego/unfair-mario" /><link rel="alternate" hreflang="it" href="https://www.gioca.re/gioco/unfair-mario" /><link rel="alternate" hreflang="nl" href="https://www.speelspelletjes.nl/spel/unfair-mario" /><link rel="alternate" hreflang="id" href="https://www.onlinegame.co.id/game/unfair-mario" /><style type="text/css">
+    #main {
+        margin:0;
+        left: 227px ;
+        right: 227px ;
+    }
+    @media only screen and (max-width: 1374px){
+        #leftCol{
+            display:none;
+        }
+        #main{
+            left:30px;
+        }
+    }
+    @media only screen and (max-width: 1087px){
+        #rightCol{
+            display:none;
+        }
+        #main{
+            right:30px;
+        }
+    }
+    @media only screen and (max-width: 800px){
+        #main{
+            left:0;
+            right:0;
+        }
+        #rest{
+            width:800px;
+        }
+    }
+</style>
+<script type="text/javascript">
+
+
+var HEIGHT_MARGIN = 100; // make the game at most screen_height - 100
+var bannerDistance = 60;
+var resizable = true;
+var loadInBackground = false;
+var originalWidth = 480;
+var originalHeight =352 ;
+var minGameContainerWidth = 800;
+var containerWidth = 800;
+
+var oneSideCol = false;
+var noSideCol = false;
+var halfPageCol = false;
+var rightMpuCol = false;
+var displayTopLeaderboard = false;
+
+var windowWidth = $(window).width();
+
+if(windowWidth < 1087){
+  console.log('No col');
+  oneSideCol = false;
+  noSideCol = true;
+  displayTopLeaderboard = true;
+} else if(windowWidth < 1374){
+    // 1 col: regular or half page
+    if(windowWidth < 1227){
+      console.log('1 col');
+      oneSideCol = true;
+    } else if (windowWidth < 1200) {
+      // TODO decide: currently set col instead
+      // of right MPU since it performs better
+      // in terms of revenue and analytics engagement
+//      console.log('right mpu col');
+//      rightMpuCol = true;
+      console.log('1 col');
+      oneSideCol = true;
+    } else {
+      console.log('half page col');
+      halfPageCol = true;
+    }
+} else {
+  console.log('2 cols');
+}
+var numCols = 2 - oneSideCol - 2*noSideCol;
+
+var css = '';
+
+if(displayTopLeaderboard) {
+  // make it visible
+  css += '#topPlaceholder {width: 728px;height:90px;display:block;}';
+}
+
+var hasTopPadding = false;
+
+if(resizable){
+    var w = $(window).width() - numCols*(167 + 2*bannerDistance) - (2-numCols)*bannerDistance;
+    var gameContainerWidth = Math.max(w,containerWidth);
+    var prerollWidth = Math.min(700, gameContainerWidth);
+    var h = 0.73333333333333*gameContainerWidth;
+
+    if(h > $(window).height()-HEIGHT_MARGIN){
+        h = $(window).height()-HEIGHT_MARGIN;
+        w = h / 0.73333333333333;
+        css += '#game { width: ' + w + 'px; padding-top: 15px;}';
+        hasTopPadding = true;
+    }
+    else{
+        css += '#game { width: ' + gameContainerWidth + 'px;}';
+        if(gameContainerWidth > w){
+            if(!noSideCol && !oneSideCol && !halfPageCol && !rightMpuCol) {
+              // two side banners
+              css += '#main { width: ' + (gameContainerWidth + 2*bannerDistance) + 'px;}';
+            }
+        }
+    }
+
+
+    css += '#game { height: ' + h + 'px;}';
+    css += '#gameContainer { width: ' + gameContainerWidth + 'px;}';
+    css += '#topRelatedWrapper, #topRelated { width: ' + (gameContainerWidth + 10) + 'px;}';
+    css += '#prerollWrapper { width: ' + prerollWidth + 'px; height: ' + 3/4*prerollWidth+'px}';
+    css += '#walkthrough { width: ' + gameContainerWidth + 'px;}';
+}
+else{
+    var gameContainerWidth = containerWidth;
+    var prerollWidth = Math.min(700, gameContainerWidth);
+    var screenWidth = $(window).width();
+    var colMargin = (screenWidth - gameContainerWidth)/2 - 167 - 2*bannerDistance;
+    if(!oneSideCol && !noSideCol && !halfPageCol && !rightMpuCol) {
+        // two banners
+        css += '#main { left: ' + (colMargin + 167 + bannerDistance) + 'px; right: '+ (colMargin + 167 + bannerDistance) +'px}';
+    }
+    css += '#leftCol { padding-left: '+ colMargin +'px;}';
+    css += '#rightCol { padding-right: '+ colMargin +'px;}';
+    var w = 480;
+    var h = 352;
+}
+if(oneSideCol || noSideCol || halfPageCol || rightMpuCol){
+    // hide left column
+    css += '#leftCol { display: none;}';
+    css += '#main { left: ' + bannerDistance/2 + 'px;}';
+    if(noSideCol){
+        css += '#rightCol { display: none;}';
+        css += '#main { right: ' + bannerDistance/2 + 'px;}';
+    }
+}
+
+if(halfPageCol || rightMpuCol) {
+  css += '#main { right: 367px;}';
+  css += '#rightCol { width: 335px;}';
+  css += '#rightCol .sidePanel.sky { width: 300px;}';
+  css += '#rightSky { display: none;}';
+}
+if (oneSideCol) {
+  css += '#halfPage { display: none;}';
+  css += '#rightMpu { display: none;}';
+}
+
+if($(window).height() < 800) {
+  console.log('Less margin')
+  // if the skip button appears below the fold, make the padding smaller so that it's visible
+    css += '#prerollWrapper {padding-top: 5px}';
+  if(hasTopPadding && loadInBackground) {
+    css += '#prerollWrapper {margin-top: -15px}';
+  }
+}
+
+
+var style = document.createElement('style');
+style.type = 'text/css';
+style.innerHTML = css;
+
+document.head.appendChild(style)
+</script>
+<script>
+    var prerollProvider = '';
+</script>
+<script src="//www.crazygames.com/assets/js/play.js?v3.3" async></script>
+<meta property="og:image" content="https://cg-images-1.imgix.net/unfairmario.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=180" />
+
+<link rel="dns-prefetch" href="//fastlane.rubiconproject.com">
+<link rel="dns-prefetch" href="//prebid.districtm.ca">
+<link rel="dns-prefetch" href="//id.adnxs.com">
+<link rel="dns-prefetch" href="//secure.adnxs.com">
+<link rel="dns-prefetch" href="//as-sec.casalemedia.com">
+<link rel="dns-prefetch" href="//maxflow-d.openx.net">
+<script type="text/javascript">
+    // we inline some setup
+    var pbjs = pbjs || {};
+    pbjs.que = pbjs.que || [];
+
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    googletag.cmd.push(function() {
+      googletag.pubads().disableInitialLoad();
+    });
+</script>
+<script type="text/javascript" async src="/assets/js/prebid11112017_appnexus_districtm_rubicon_index_openx_dfpvideo.js"></script>
+<script type="text/javascript" async src="/js/prebid-header-large-mpu-ref.js"></script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=571264169614487";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="top">
+<div id="burger">
+<a href="#">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAXCAQAAADT28WeAAAATUlEQVR4AWP4z0gZZEAH/43/G4GhMQhDSQQ0gvARqmAkTAbTwHrKIKaBDZRB2rsQEWYIiBAjDDENZKIMMtAaDNF0OJoOR9PhaDocTYcASNRT+6FODmgAAAAASUVORK5CYII=" alt="" width="40" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAXCAQAAABzRK1wAAAARElEQVR42mP4z4AOGQa5kPT/2P+KyEIC/1P/N/zP+i8ME4IIgGDmf1GQkBiQ0QCHef+lGP7b/k/4HwWH8f89GIZOSAAAUzjZPVfRpesAAAAASUVORK5CYII=" width="9" id="burgerArrow" alt="" />
+</a>
+</div>
+<div id="close">
+<a href="#">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAQAAAADHm0dAAABEklEQVR4AW3RA27uQRRA8fuWUNsO277adqPuqw5qm5+1ktpYRU8xSW5uvv9vwsnJUBCEbhYpRzxHPjMMIoggtHEN+MjxCNM5Ap7pQ4QBrnEuk+JU9nGeGBcWUQFyNSSDE9SWUIYf5SPbhaRxiEpQLQi5+JLiVBtSjLgVss3KZzSwg4pTiLjUrXyJukVFKUE0dStfoDQsQrApQg7HWH4NbSrUcYO6pwXxTtPY5AtQh+TY1L6jdUE2NiWDI9Qjykc+mpJmwiDtnKACbmW34gEqRgFCtv1BchEhz6wYd8+TFPspEeZNWKw3Jo8Aal0Y5xkn4lY0n3KJ88mUIPTxZFc0sQ/4YJx/bmKINWoQz1HCMpMI8g11K4krMjn8SAAAAABJRU5ErkJggg==" alt="" width="15" height="15" />
+</a>
+</div>
+<div id="topMid">
+<a href="https://www.crazygames.com/">
+<h2 id="headerTop"><span class="green">C</span><span class="yellow">r</span><span class="orange">a</span><span class="red">z</span><span class="purple">y</span>Games<b>.com</b>
+</h2> </a>
+<div id="topShare">
+<div style="float:left;width:90px;margin:0;">
+<div class="fb-like" data-href="https://www.facebook.com/crazygamesofficial" data-width="90" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false">
+</div>
+</div>
+</div>
+<div id="language-select">
+<img src="https://cg-images-1.imgix.net/en.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=15" alt="Crazy Games" />
+<img src="https://cg-images-1.imgix.net/burgerdown.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=9" width="9">
+<ul id="languages">
+<li>
+<span>
+<img src="https://cg-images-1.imgix.net/en.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=15" alt="Crazy Games" width="15" />
+English </span>
+</li>
+<li>
+<a href="https://www.1001juegos.com/juego/unfair-mario" hreflang="es">
+<img src="https://cg-images-1.imgix.net/es.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=15" alt="1001 Juegos" width="15" />
+Spanish </a>
+</li>
+<li>
+<a href="https://www.gioca.re/gioco/unfair-mario" hreflang="it">
+<img src="https://cg-images-1.imgix.net/it.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=15" alt="Giocare" width="15" />
+Italian </a>
+</li>
+<li>
+<a href="https://www.speelspelletjes.nl/spel/unfair-mario" hreflang="nl">
+<img src="https://cg-images-1.imgix.net/nl.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=15" alt="Speel Spelletjes" width="15" />
+Dutch </a>
+</li>
+<li>
+<a href="https://www.onlinegame.co.id/game/unfair-mario" hreflang="ind">
+<img src="https://cg-images-1.imgix.net/ind.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=15" alt="Online Game" width="15" />
+Indonesian </a>
+</li>
+</ul>
+</div>
+<form class="searchForm cf" action="https:////www.crazygames.com/search" method="get">
+<input id="search_form" type="text" name="q" placeholder="" required />
+<input type="submit" class="button" value="search" />
+</form>
+</div>
+</div>
+<div id="rest">
+<style type="text/css">#menu ul{ width:1125px;}</style>
+<div id="menu">
+<ul>
+<li>
+<a href="https://www.crazygames.com/" class="regularB">
+Home </a>
+</li>
+<li>
+<a href="https://www.crazygames.com/best" class="regularB">
+Best </a>
+</li>
+<li>
+<a href="https://www.crazygames.com/new" class="regularB">
+New </a>
+</li>
+<li>
+<a href="https://www.crazygames.com/c/action" class="actionB">
+action </a>
+</li>
+<li>
+<a href="https://www.crazygames.com/c/adventure" class="adventureB">
+adventure </a>
+</li>
+<li>
+<a href="https://www.crazygames.com/c/arcade" class="arcadeB" id="active">
+arcade </a>
+</li>
+<li>
+<a href="https://www.crazygames.com/c/driving" class="drivingB">
+driving </a>
+</li>
+<li>
+<a href="https://www.crazygames.com/c/girls" class="girlsB">
+lifestyle </a>
+</li>
+<li>
+<a href="https://www.crazygames.com/c/puzzle" class="puzzleB">
+puzzle </a>
+</li>
+<li>
+<a href="https://www.crazygames.com/c/shooting" class="shootingB">
+shooting </a>
+</li>
+<li>
+<a href="https://www.crazygames.com/c/skill" class="skillB">
+skill </a>
+</li>
+<li>
+<a href="https://www.crazygames.com/c/sports" class="sportsB">
+sports </a>
+</li>
+<li>
+<a href="https://www.crazygames.com/c/io" class="ioB">
+.io </a>
+</li>
+<li>
+<a href="https://www.crazygames.com/c/clicker" class="clickerB">
+clicker </a>
+</li>
+<li id="tags" class="cf">
+<div>
+<a href="https://www.crazygames.com/tags">tags <img border="0" src="data:image/gif;base64,R0lGODlhBwAIALMAAAAAAP///xMTFF1gYlteYCgqKzEzNDo8PTk7PB8gIP///wAAAAAAAAAAAAAAAAAAACH5BAEAAAoALAAAAAAHAAgAAAQTcMg5kLjXjAJ6IhL3UQdInWgaAQA7" alt="arrow" width="7" />
+</a>
+<span>
+<a href="https://www.crazygames.com/t/minecraft">
+minecraft </a>
+<a href="https://www.crazygames.com/t/car">
+car </a>
+<a href="https://www.crazygames.com/t/bike">
+bike </a>
+<a href="https://www.crazygames.com/t/monster-truck">
+monster truck </a>
+<a href="https://www.crazygames.com/t/2-player">
+2 player </a>
+<a href="https://www.crazygames.com/t/multiplayer">
+multiplayer </a>
+<a href="https://www.crazygames.com/t/point-and-click">
+point and click </a>
+<a href="https://www.crazygames.com/t/3d">
+3d </a>
+<a href="https://www.crazygames.com/t/drifting">
+drifting </a>
+<a href="https://www.crazygames.com/t/rally">
+rally </a>
+<a href="https://www.crazygames.com/t/goalkeeper">
+goalkeeper </a>
+<a href="https://www.crazygames.com/t/soccer">
+soccer </a>
+<a href="https://www.crazygames.com/t/tower-defense">
+tower defense </a>
+<a href="https://www.crazygames.com/t/zombie">
+zombie </a>
+<a href="https://www.crazygames.com/t/first-person-shooter">
+first person shooter </a>
+<a href="https://www.crazygames.com/t/physics">
+physics </a>
+<a href="https://www.crazygames.com/t/mario">
+mario </a>
+<a href="https://www.crazygames.com/t/police">
+police </a>
+</span>
+</div>
+</li>
+</ul>
+</div>
+<div id="main" class="game-center">
+<div class="mainPart">
+<div id="topPlaceholder" class="midPanel leaderboard">
+
+<div id='div-gpt-ad-1505301539609-0' style='height:90px; width:728px;'>
+<script>
+        try {
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1505301539609-0'); });
+        } catch (e) {
+            if (e instanceof ReferenceError) {
+                console.warn(e.name + ': ' + e.message);
+            } else {
+                throw e;
+            }
+        }
+    </script>
+</div> </div>
+<div id="topRelatedWrapper">
+<div id="topRelated">
+<div class="tile" data-game-slug="slope" data-video-src="slope-trimmed.mp4" data-video-height="83" data-video-width="135" data-image-src="https://cg-images-1.imgix.net/slope.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135">
+<a href="https://www.crazygames.com/game/slope" class="">
+<div class="image-container">
+<img src="https://cg-images-1.imgix.net/slope.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" alt="Slope" width="135" height="83" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Slope </div>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="madalin-stunt-cars-2" data-video-src="madalin-stunt-cars-2-trimmed.mp4" data-video-height="83" data-video-width="135" data-image-src="https://cg-images-1.imgix.net/madalinstuntcars2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135">
+<a href="https://www.crazygames.com/game/madalin-stunt-cars-2" class="">
+<div class="image-container">
+<img src="https://cg-images-1.imgix.net/madalinstuntcars2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" alt="Madalin Stunt Cars 2" width="135" height="83" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Madalin Stunt Cars 2 </div>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="basketball-legends" data-video-src="basketball-legends-trimmed.mp4" data-video-height="83" data-video-width="135" data-image-src="https://cg-images-1.imgix.net/basketballlegends.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135">
+<a href="https://www.crazygames.com/game/basketball-legends" class="">
+<div class="image-container">
+<img src="https://cg-images-1.imgix.net/basketballlegends.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" alt="Basketball Legends" width="135" height="83" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Basketball Legends </div>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="super-smash-flash" data-video-src="super-smash-flash.mp4" data-video-height="83" data-video-width="135" data-image-src="https://cg-images-1.imgix.net/supersmashflash.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135">
+<a href="https://www.crazygames.com/game/super-smash-flash" class="">
+<div class="image-container">
+<img src="https://cg-images-1.imgix.net/supersmashflash.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" alt="Super Smash Flash" width="135" height="83" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Super Smash Flash </div>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="vex-3" data-video-src="vex-3-trimmed.mp4" data-video-height="83" data-video-width="135" data-image-src="https://cg-images-1.imgix.net/vex3b.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135">
+<a href="https://www.crazygames.com/game/vex-3" class="">
+<div class="image-container">
+<img src="https://cg-images-1.imgix.net/vex3b.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" alt="Vex 3" width="135" height="83" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Vex 3 </div>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="super-mario-crossover" data-video-src="super-mario-crossover.mp4" data-video-height="83" data-video-width="135" data-image-src="https://cg-images-1.imgix.net/supermariocrossover.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135">
+<a href="https://www.crazygames.com/game/super-mario-crossover" class="">
+<div class="image-container">
+<img src="https://cg-images-1.imgix.net/supermariocrossover.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" alt="Super Mario Crossover" width="135" height="83" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Super Mario Crossover </div>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="a-koopas-revenge-2" data-video-src="a-koopas-revenge-2-trimmed.mp4" data-video-height="83" data-video-width="135" data-image-src="https://cg-images-1.imgix.net/akoopasrevenge2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135">
+<a href="http://www.crazygames.com/game/a-koopas-revenge-2" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="A Koopa's Revenge 2" data-src="https://cg-images-1.imgix.net/akoopasrevenge2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" data-lazy="https://cg-images-1.imgix.net/akoopasrevenge2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" width="135" height="83" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+A Koopa's Revenge 2 </div>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="mario-combat" data-video-src="mario-combat-trimmed.mp4" data-video-height="83" data-video-width="135" data-image-src="https://cg-images-1.imgix.net/mariocombat.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135">
+<a href="https://www.crazygames.com/game/mario-combat" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Mario Combat" data-src="https://cg-images-1.imgix.net/mariocombat.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" data-lazy="https://cg-images-1.imgix.net/mariocombat.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" width="135" height="83" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Mario Combat </div>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="slitherio" data-video-src="slitherio-trimmed.mp4" data-video-height="83" data-video-width="135" data-image-src="https://cg-images-1.imgix.net/slitherio.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135">
+<a href="http://www.crazygames.com/game/slitherio" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Slither.io" data-src="https://cg-images-1.imgix.net/slitherio.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" data-lazy="https://cg-images-1.imgix.net/slitherio.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" width="135" height="83" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Slither.io </div>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="combat-reloaded" data-video-src="combat-reloaded-trimmed.mp4" data-video-height="83" data-video-width="135" data-image-src="https://cg-images-1.imgix.net/combatreloadedb.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135">
+<a href="http://www.crazygames.com/game/combat-reloaded" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Combat Reloaded" data-src="https://cg-images-1.imgix.net/combatreloadedb.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" data-lazy="https://cg-images-1.imgix.net/combatreloadedb.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" width="135" height="83" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Combat Reloaded </div>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="plumbers-creed">
+<a href="https://www.crazygames.com/game/plumbers-creed" class="">
+<div class="image-container">
+<span style="width: 135px" class="tileNoVideo"><p style="width: 135px">no video</p></span> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Plumber's Creed" data-src="https://cg-images-1.imgix.net/plumberscreed.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" data-lazy="https://cg-images-1.imgix.net/plumberscreed.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" width="135" height="83" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Plumber's Creed </div>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="run-3" data-video-src="run-3-trimmed.mp4" data-video-height="83" data-video-width="135" data-image-src="https://cg-images-1.imgix.net/run3b.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135">
+<a href="https://www.crazygames.com/game/run-3" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Run 3" data-src="https://cg-images-1.imgix.net/run3b.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" data-lazy="https://cg-images-1.imgix.net/run3b.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" width="135" height="83" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Run 3 </div>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="diepio" data-video-src="diepio-trimmed.mp4" data-video-height="83" data-video-width="135" data-image-src="https://cg-images-1.imgix.net/diepio.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135">
+<a href="http://www.crazygames.com/game/diepio" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Diep.io" data-src="https://cg-images-1.imgix.net/diepio.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" data-lazy="https://cg-images-1.imgix.net/diepio.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" width="135" height="83" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Diep.io </div>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="ultimate-mario-run" data-video-src="ultimate-mario-run.mp4" data-video-height="83" data-video-width="135" data-image-src="https://cg-images-1.imgix.net/ultimatemariorun.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135">
+<a href="https://www.crazygames.com/game/ultimate-mario-run" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Ultimate Mario Run" data-src="https://cg-images-1.imgix.net/ultimatemariorun.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" data-lazy="https://cg-images-1.imgix.net/ultimatemariorun.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" width="135" height="83" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Ultimate Mario Run </div>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="super-mario-run" data-video-src="super-mario-run.mp4" data-video-height="83" data-video-width="135" data-image-src="https://cg-images-1.imgix.net/supermariorun.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135">
+<a href="http://www.crazygames.com/game/super-mario-run" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Super Mario Run" data-src="https://cg-images-1.imgix.net/supermariorun.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" data-lazy="https://cg-images-1.imgix.net/supermariorun.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" width="135" height="83" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Super Mario Run </div>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="super-mario-flash">
+<a href="http://www.crazygames.com/game/super-mario-flash" class="">
+<div class="image-container">
+<span style="width: 135px" class="tileNoVideo"><p style="width: 135px">no video</p></span> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Super Mario Flash" data-src="https://cg-images-1.imgix.net/supermarioflash.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" data-lazy="https://cg-images-1.imgix.net/supermarioflash.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" width="135" height="83" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Super Mario Flash </div>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="super-smash-flash-2" data-video-src="super-smash-flash-2.mp4" data-video-height="83" data-video-width="135" data-image-src="https://cg-images-1.imgix.net/supersmashflash2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135">
+<a href="https://www.crazygames.com/game/super-smash-flash-2" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Super Smash Flash 2" data-src="https://cg-images-1.imgix.net/supersmashflash2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" data-lazy="https://cg-images-1.imgix.net/supersmashflash2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" width="135" height="83" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Super Smash Flash 2 </div>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="advanced-pixel-apocalypse-3" data-video-src="advanced-pixel-apocalypse-3.mp4" data-video-height="83" data-video-width="135" data-image-src="https://cg-images-1.imgix.net/advancedpixelapocalypse3.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135">
+<a href="https://www.crazygames.com/game/advanced-pixel-apocalypse-3" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Advanced Pixel Apocalypse 3" data-src="https://cg-images-1.imgix.net/advancedpixelapocalypse3.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" data-lazy="https://cg-images-1.imgix.net/advancedpixelapocalypse3.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" width="135" height="83" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Advanced Pixel Apocalypse 3 </div>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="kill-the-plumber-2">
+<a href="https://www.crazygames.com/game/kill-the-plumber-2" class="">
+<div class="image-container">
+<span style="width: 135px" class="tileNoVideo"><p style="width: 135px">no video</p></span> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Kill the Plumber 2" data-src="https://cg-images-1.imgix.net/killtheplumber2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" data-lazy="https://cg-images-1.imgix.net/killtheplumber2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" width="135" height="83" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Kill the Plumber 2 </div>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="cat-meat">
+<a href="http://www.crazygames.com/game/cat-meat" class="">
+<div class="image-container">
+<span style="width: 135px" class="tileNoVideo"><p style="width: 135px">no video</p></span> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Cat Meat" data-src="https://cg-images-1.imgix.net/catmeat.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" data-lazy="https://cg-images-1.imgix.net/catmeat.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=135" width="135" height="83" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Cat Meat </div>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div id="prevArrow"><span class="chevron left"></span></div>
+<div id="nextArrow"><span class="chevron right"></span></div>
+</div>
+<div id="gameContainer" class="midPanel">
+<div id="game" style="display:block;border: solid rgba(0,0,0,0.2) 1px;
+            border-width: 0 0 1px 0;">
+<div id="game_container" style="width:100%;height:100%;margin-left:auto;margin-right:auto;margin-top:0;padding:0;">
+<script type="text/javascript">
+  var swfParams = {
+    allowScriptAccess: "sameDomain",
+    allowNetworking: "internal",
+        quality: "high",
+        bgcolor: "#FFF"
+  };
+  var flashVars = {};
+  var swfLocation = '//files.crazygames.com/unfairmario.swf';
+</script>
+<div id="flashGameSwfO"></div>
+<div id="missing_flash_container" class="hidden">
+<span id="missing_flash_title">
+<strong>Unfair Mario</strong> by <strong>
+<span class="green">C</span><span class="yellow">r</span><span class="orange">a</span><span class="red">z</span><span class="purple">y</span>Games<b>.com</b>
+</strong>
+</span>
+<a href="https://get.adobe.com/flashplayer" id="missing_flash_link" target="_blank" onclick="showMissingFlash()">
+<div id="missing_flash">
+<div class="missing_flash_screen">
+<img alt="Unfair Mario" src="https://cg-images-1.imgix.net/unfairmario.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=180" /> <br />
+<br />
+<span id="missing_flash_btn">
+Let's play Unfair Mario » </span>
+</div>
+</div>
+</a>
+</div>
+<script async src="/assets/js/load-swf.js?v=0.17" type="text/javascript"></script>
+ </div>
+</div>
+<div class="subGamePart" style="text-align:center;border-bottom:1px solid #e2e2e2;">
+<div class="subGameRest" style="padding:20px 30px;">
+<img src="https://cg-images-1.imgix.net/unfairmario.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=73" width="73" height="45" style="border:1px solid #000; float:left;width:73px;" alt="Unfair Mario icon" />
+<div itemscope itemtype="https://data-vocabulary.org/Review-aggregate" style="float:left;padding:3px 0 0 15px;text-align:left;font-size:12px;line-height:13px;color: #7f7f7f;">
+<h1 itemprop="itemreviewed">
+Unfair Mario </h1>
+<span style="height:12px;padding:0;display:block;">
+<div style="float:left">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAAAy0lEQVR42o3QMQsBYRzH8YuIwSBSBiSbLLwDZZAipW6xSCl5GzavwiiryWKQshiNUlgNkiyG8/3X/0rXc7mnPnX3f36/nrvHsgzLWdo59FG0gi7CNl4YBC3EsICDFRKmUFSDKeQx1FOk9MEYBd2PS15KLcyxxBYPLbie2Om+5LpSquPsCfq5oul+YgWbPwU5rer9NykefApH1EwXksTap7RH2lQq4fYTfP8831E2lRoauGCi1zzCSecdbyGMNmbIyrvOQ8hgih4iMv8C7/kYBfoC2HkAAAAASUVORK5CYII=" /> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAAAy0lEQVR42o3QMQsBYRzH8YuIwSBSBiSbLLwDZZAipW6xSCl5GzavwiiryWKQshiNUlgNkiyG8/3X/0rXc7mnPnX3f36/nrvHsgzLWdo59FG0gi7CNl4YBC3EsICDFRKmUFSDKeQx1FOk9MEYBd2PS15KLcyxxBYPLbie2Om+5LpSquPsCfq5oul+YgWbPwU5rer9NykefApH1EwXksTap7RH2lQq4fYTfP8831E2lRoauGCi1zzCSecdbyGMNmbIyrvOQ8hgih4iMv8C7/kYBfoC2HkAAAAASUVORK5CYII=" /> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAAAy0lEQVR42o3QMQsBYRzH8YuIwSBSBiSbLLwDZZAipW6xSCl5GzavwiiryWKQshiNUlgNkiyG8/3X/0rXc7mnPnX3f36/nrvHsgzLWdo59FG0gi7CNl4YBC3EsICDFRKmUFSDKeQx1FOk9MEYBd2PS15KLcyxxBYPLbie2Om+5LpSquPsCfq5oul+YgWbPwU5rer9NykefApH1EwXksTap7RH2lQq4fYTfP8831E2lRoauGCi1zzCSecdbyGMNmbIyrvOQ8hgih4iMv8C7/kYBfoC2HkAAAAASUVORK5CYII=" /> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAAAy0lEQVR42o3QMQsBYRzH8YuIwSBSBiSbLLwDZZAipW6xSCl5GzavwiiryWKQshiNUlgNkiyG8/3X/0rXc7mnPnX3f36/nrvHsgzLWdo59FG0gi7CNl4YBC3EsICDFRKmUFSDKeQx1FOk9MEYBd2PS15KLcyxxBYPLbie2Om+5LpSquPsCfq5oul+YgWbPwU5rer9NykefApH1EwXksTap7RH2lQq4fYTfP8831E2lRoauGCi1zzCSecdbyGMNmbIyrvOQ8hgih4iMv8C7/kYBfoC2HkAAAAASUVORK5CYII=" /> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAQAAAATvv9SAAAAtUlEQVQoz23OoUpDARgF4B+HYwaDTASDG2KTFfcGgmEIiiBYLCII4mvYfIpFWTVZ/GAMLMZFEdRqGGNYDL/lunsZctI5XzmR8Rdbzm2XPSp0ZubiH9JwLz1YnZO6hqaWSzPpx7W2phX1cKhvYGgipTQ1MtB3Eva9FWM1H3qRoeNpAUb2ihs6Xiow1p0/tOaxQs/WS9rxKaVvKX3ZLelAenej7cqrdFyQmiN3NtUyLNlw69Ryxi/xKsMFOm4v2wAAAABJRU5ErkJggg==" /> </div>
+<div style="float:left;padding-left:5px;">
+<span itemprop="rating" itemscope itemtype="https://data-vocabulary.org/Rating">
+<span id="curRatingValue" itemprop="average">8.0</span> -
+<meta itemprop="worst" content="0">
+<meta itemprop="best" content="10">
+</span>
+<span id="curRatingNumber" itemprop="votes">906</span>
+<meta itemprop="count" content="906">
+ratings </div>
+</span>
+</div>
+</div>
+<div id="buttonList">
+<a href="#walkthrough" id="toWalkthroughButton"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAQAAACRZI9xAAABRElEQVQoz2XRsUuVcRTG8cf39w5p0CBqmkVLU39QBkWFOdiloa7UkOFiU0MQRBEELZUNkn9FFA1iQQT5L9jN29tFWvw03Be51Dnj8+U55zwnKrVKTLvtvT0DP3xwx0lRKUrUanHZngPvrLima9NAz6Io6ihiFS+ckaM+5RnWRYm4hFutVNStb3RwXWJK38tWnBdpoSKeGpiNrj/mROWYbW+dO8JiysBqfLQlamMm7KLnvhOiUos3dqJnpUXGfTOsrxaMK6KjHwNXRpFDh0PsoogLmujp/uey66rjirihH59simLMhO9oPDB5tMsrX+KuAzNizLjPtpwfuWhSYy2mNZ63uZz9J5fHDsxHLKLTpluNpLuEZYlKrOOJ2ZEfzXiEh6KKoogl+37bcNOCjtd+aSwPXYc7VGLOPdt+auzbseZ0O7b8BYxRfyOR/F8eAAAAAElFTkSuQmCC" alt="walkthrough" /></a> <a href="#" class="ratingButton" id="dislike"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAATCAYAAABPwleqAAABAElEQVR42mNgGKHg77//XP/+/5/0////a0B8FIiPIGEQ/8Kf//8L/vz7bw1kH4eqWwXR/P+/PpDz8z8eANQ8B6g5CknoI8zmjP8EAFBzL1CzL5Ilt0AarYCM1yRo/oGs2fs/EQC75v//lwEZ/8jSDCTukWnzTZCzO4jUPAWoORxJ6APDv3//9xKjGWhJ7Z+//3WA6ncA2fuAeD7I5mmgOAPid0D8FohfgUxFC4f7QI3q4Gj9+58LyOYBYjaQZk6gaZZABfZAbAPEJkBdZRCXwm3NJCW5xsGshTqTnWjNQI1p8ID697+Y1Iyi9g/i///AdNBFck4D2hgNSgOgUMalBgAkFYlM5K7uuAAAAABJRU5ErkJggg==" alt="" /></a> <a href="#" class="ratingButton" id="like" data-game="unfair-mario"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAATCAYAAABPwleqAAAA6klEQVR4AeXLobYNUBRA0VMAfgMAAAAdKoAGEkB7GQCggAT8AEABVQFABpDA2XsCHoB7bzXHWHGVP4nUhvs1zSnNCjZA8jRSz6bmmlb6IlnY8BipU6aTkIg0v5l5iW9qsgbDMR6TMo2J1KXU0LGG7hG6lg9q6IUHvkm8wCM8xTO8jLSnRDoY6XymkzX0j9SmAZnOFbzwRU0zKrs0INK6gluA1zVNq2zWmPsFt1uYMzjc6izSlFbnx5HGfj+/aXSOtLh8hJe+qGl2ZZ+/exMM+jI7juu4UtO4yjJcxSVc/K5LuJ7siNS1/KfeAwUfiUyGbzFsAAAAAElFTkSuQmCC" alt="" /></a> </div>
+<div style="height:85px;"></div>
+</div>
+<div class="subGamePart">
+<div class="subGameRest">
+<div class="subGamePanel" id="tagsList">
+<table id="share">
+<tr>
+<td width="90" valign="top" style="padding-top:2px;">
+<div class="fb-like" data-href="https://www.crazygames.com/game/unfair-mario" data-width="90" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+</td>
+<td style="line-height:24px;font-size:12px;" id="tagList">
+<a href="https://www.crazygames.com/t/mario">mario</a> &nbsp;-&nbsp; <a href="https://www.crazygames.com/t/platform">platform</a> </td>
+</tr>
+</table>
+</div>
+<div class="description subGamePanel">
+<p>Never has a game been so frustrating, yet so addictive, as this one. Unfair Mario takes the adventures of everyone's favorite plumber and flips them into a world of surprise falls, sudden traps and slew of other unexpected instant deaths! You'll be torn between wanting to smash your keyboard or hit that end goal just inches away. There are infinite lives, because you'll need every one. In Unfair Mario nothing is as it seems anymore... Find the final flag while avoiding the hidden traps. Have fun(?) with the unfair version of the classic mario platformer.
+</p><h3>Features</h3><ul>
+<li>Classic Super Mario World style graphics</li>
+<li>Enormously challenging gameplay, unlike any Mario game to date</li>
+<li>Simple controls</li>
+</ul><h3>Platforms</h3><p>Unfair Mario is available exclusively through a web browser using the Flash plugin.</p> <h3>Controls</h3><p>Use the arrow keys to move Mario.</p> </div>
+<div class="description subGamePanel">
+<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" content="https://www.crazygames.com/c/arcade" href="https://www.crazygames.com/c/arcade"><span itemprop="title">Arcade Games</span></a></span> &raquo <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" content="https://www.crazygames.com/t/classic" href="https://www.crazygames.com/t/classic"><span itemprop="title">Classic Games</span></a></span> &raquo <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" content="https://www.crazygames.com/t/mario" href="https://www.crazygames.com/t/mario"><span itemprop="title">Mario Games</span></a></span> &raquo Unfair Mario </div>
+<div class="lastPanel subGamePanel">
+<a href="#" id="addthistoyourwebsite">Add Unfair Mario to your website / blog</a>
+</div>
+ <div class="subGamePanel" id="game-addthis-box">
+<span style="font-size:14px;font-weight:bold;">Add Unfair Mario to your website / blog</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#addthistoyourwebsite" id="close-addthis-box">x - close</a>
+<br />
+<p style="font-size:12px;line-height:18px;">
+Note: this needs to be inserted as HTML code. If you are not sure how to do this, please <a href="https://www.crazygames.com/contact" rel="nofollow" target="_blank">contact us</a> and we will assist you!</p>
+<div>
+<p style="line-height:30px;">Website / Blog</p>
+<textarea style="background-color:#e3e3e3;font-size:12px;" rows="8" cols="60" onclick="this.focus();this.select()" readonly="readonly">
+           &lt;div class=&quot;crazyGamesComGame&quot;&gt;&lt;div class=&quot;cgContainer&quot; id=&quot;unfair-mario_480_352&quot;&gt;[Here comes the game]&lt;/div&gt;&lt;a rel=&quot;nofollow&quot; class=&quot;cgLink&quot; href=&quot;http://www.crazygames.com/t/platform?utm_source=under_game&amp;utm_medium=unfair-mario&amp;utm_campaign=addthistoyourwebsite&quot;target=&quot;_blank&quot;&gt;Original&lt;/a&gt;&lt;/div&gt;&lt;script src=&quot;https://img.crazygames.com/add-widget/addd.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;	</textarea>
+</div>
+<div>
+<p style="line-height:30px;">Tumblr</p>
+<textarea style="background-color:#e3e3e3;font-size:12px;" rows="8" cols="60" onclick="this.focus();this.select()" readonly="readonly">
+           &lt;p class=&quot;crazyGamesComGame&quot;&gt;&lt;span class=&quot;cgContainer&quot; id=&quot;unfair-mario_480_352&quot;&gt;[Here comes the game]&lt;/span&gt;&lt;br /&gt;&lt;a rel=&quot;nofollow&quot; class=&quot;cgLink&quot; href=&quot;http://www.crazygames.com/t/platform?utm_source=under_game&amp;utm_medium=unfair-mario&amp;utm_campaign=addthistoyourwebsite&quot;target=&quot;_blank&quot;&gt;Original&lt;/a&gt;&lt;/p&gt;&lt;script src=&quot;https://img.crazygames.com/add-widget/addd.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;	</textarea>
+</div>
+</div>
+</div>
+<div class="mpu mpuRight mpu-336">
+
+<div id='div-gpt-ad-1481021067162-4'>
+<script>
+        try {
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1481021067162-4'); });
+        } catch (e) {
+            if (e instanceof ReferenceError) {
+                console.warn(e.name + ': ' + e.message);
+            } else {
+                throw e;
+            }
+        }
+    </script>
+</div> </div>
+<p style="line-height:0px;">&nbsp;</p>
+</div>
+</div>
+<div class="midPanel leaderboard">
+<div id='div-gpt-ad-1481021067162-6' style='height:90px; width:728px;'>
+<script>
+        try {
+            googletag.cmd.push(function () {
+                googletag.display('div-gpt-ad-1481021067162-6');
+            });
+        } catch (e) {
+            if (e instanceof ReferenceError) {
+                console.warn(e.name + ': ' + e.message);
+            } else {
+                throw e;
+            }
+        }
+    </script>
+</div></div>
+<div class="midPanel" id="walkthrough">
+<div id="veediContainer">
+<div id="veediInit"></div>
+<div id="veediInnerContainer" style="
+                     background-image:url('https://cg-images-1.imgix.net/unfairmario.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=360');
+                     ">
+<div id="veediButton">
+<span>Unfair Mario Video Walkthrough</span>
+<a title="Play Walkthrough Video" class="play"></a>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+      var veediGameSlug = "unfair-mario";
+      var veediGameName = "Unfair Mario";
+      function loadVeedi() {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.src = '/assets/js/load-veedi.js?v=0.12';
+        s.async = false;
+        var veediContainer = document.getElementById('veediContainer');
+        var veediInnerContainer = document.getElementById('veediInnerContainer');
+        veediContainer.insertBefore(s, veediInnerContainer);
+        veediContainer.classList.toggle("withWalkthrough");
+        veediContainer.removeChild(veediInnerContainer);
+        ga('send', 'event', 'walkthrough', 'Veedi-PLAY', veediGameSlug);
+      }
+      $("#veediButton").click(loadVeedi);
+    </script>
+<div class="subGamePart" id="subWalkthrough">
+<div class="subGameRest" style="padding:30px 0 30px 30px;">
+<img src="https://cg-images-1.imgix.net/unfairmario.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=73" width="73" height="45" style="border:1px solid #000; float:left;width:73px;" alt="Unfair Mario" />
+<div class="nextToThumb">
+<h3 class="likeH1">Unfair Mario Walkthrough</h3>
+</div>
+</div>
+<div style="width:205px;padding:30px 30px 0 0;">
+<a href="#" class="rateButton" id="backToGameButton">Back to the game <span style='font-family:"Lucida Sans Unicode","Lucida Grande",sans-serif'>&#9650;</span></a> </div>
+<div style="margin: 0 auto;height: 105px;"></div>
+</div>
+<div class="subGamePart">
+<div id="subWalkthroughDescription" class="description subGamePanel lastPanel subGameRest">
+<div id="extra-desc-wrapper"><p id="extra-desc" class="description">Unfair Mario is a fabulous mario game that you can play on this page in your browser. The game is made with Flash technology to run without trouble in modern browsers. It has received 91,197 plays and has been rated 8.1 out of 10 by 904 people. Did you like playing Unfair Mario? Then also play our other <a href='https://www.crazygames.com/t/mario' target='_blank'>mario games</a> like <a href='https://www.crazygames.com/game/stompedio' target='_blank'>Stomped.io</a> and <a href='https://www.crazygames.com/game/plumbers-creed' target='_blank'>Plumber's Creed</a>.</p></div> </div>
+</div>
+</div>
+</div>
+<div id="f">
+<a href="https://www.crazygames.com/">Home</a> |
+<a href="https://www.crazygames.com/about">About</a> |
+<a rel="nofollow" href="https://www.crazygames.com/addtoyoursite">Games for your Site</a> | <a href="https://www.crazygames.com/game-developers">Game Developers</a> | <a href="https://www.crazygames.com/jobs">Jobs</a> | <a href="https://www.crazygames.com/scholarship">Scholarship</a> | <a rel="nofollow" href="https://www.crazygames.com/terms-and-conditions">Terms & Conditions</a> |
+<a rel="nofollow" href="https://www.crazygames.com/privacy-policy">Privacy</a> |
+<a rel="nofollow" href="https://www.crazygames.com/contact">Contact</a>
+<p>
+&copy; Copyright 2013 - 2017 CrazyGames.com - <a href="https://plus.google.com/+Crazygames_com" target="_blank" rel="publisher">Find us on Google Plus</a><br />
+<span style="font-size:10px;">
+CrazyGames.com is an initiative of Maxflow BVBA, Lei 33/402, 3000 Leuven, Belgium.(VAT: BE 0550.758.377) </span>
+</p><br />
+</div>
+</div>
+<div id="leftCol" class="sideCol">
+<div class="sidePanel sky" id="leftSky">
+
+<div id='div-gpt-ad-1487926862614-0'>
+<script>
+            try {
+                googletag.cmd.push(function () {
+                    googletag.display('div-gpt-ad-1487926862614-0');
+                });
+            } catch (e) {
+                if (e instanceof ReferenceError) {
+                    console.warn(e.name + ': ' + e.message);
+                } else {
+                    throw e;
+                }
+            }
+        </script>
+</div>
+</div>
+<script>
+                        if(oneSideCol || noSideCol || halfPageCol || rightMpuCol) {
+                  $('#leftSky').remove();
+                }
+                    </script>
+<div class="tile" data-game-slug="plumbers-creed">
+<a href="https://www.crazygames.com/game/plumbers-creed" class="">
+<div class="image-container">
+<span style="width: 160px" class="tileNoVideo"><p style="width: 160px">no video</p></span> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Plumber's Creed" data-src="https://cg-images-1.imgix.net/plumberscreed.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" data-lazy="https://cg-images-1.imgix.net/plumberscreed.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" width="160" height="99" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Plumber's Creed </div>
+<span>
+8.7 </span>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="run-3" data-video-src="run-3-trimmed.mp4" data-video-height="99" data-video-width="160" data-image-src="https://cg-images-1.imgix.net/run3b.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160">
+<a href="https://www.crazygames.com/game/run-3" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Run 3" data-src="https://cg-images-1.imgix.net/run3b.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" data-lazy="https://cg-images-1.imgix.net/run3b.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" width="160" height="99" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Run 3 </div>
+<span>
+8.9 </span>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="diepio" data-video-src="diepio-trimmed.mp4" data-video-height="99" data-video-width="160" data-image-src="https://cg-images-1.imgix.net/diepio.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160">
+<a href="http://www.crazygames.com/game/diepio" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Diep.io" data-src="https://cg-images-1.imgix.net/diepio.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" data-lazy="https://cg-images-1.imgix.net/diepio.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" width="160" height="99" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Diep.io </div>
+<span>
+8.6 </span>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="ultimate-mario-run" data-video-src="ultimate-mario-run.mp4" data-video-height="99" data-video-width="160" data-image-src="https://cg-images-1.imgix.net/ultimatemariorun.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160">
+<a href="https://www.crazygames.com/game/ultimate-mario-run" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Ultimate Mario Run" data-src="https://cg-images-1.imgix.net/ultimatemariorun.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" data-lazy="https://cg-images-1.imgix.net/ultimatemariorun.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" width="160" height="99" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Ultimate Mario Run </div>
+ <span>
+8.6 </span>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="super-mario-run" data-video-src="super-mario-run.mp4" data-video-height="99" data-video-width="160" data-image-src="https://cg-images-1.imgix.net/supermariorun.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160">
+<a href="http://www.crazygames.com/game/super-mario-run" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Super Mario Run" data-src="https://cg-images-1.imgix.net/supermariorun.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" data-lazy="https://cg-images-1.imgix.net/supermariorun.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" width="160" height="99" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Super Mario Run </div>
+<span>
+8.4 </span>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="super-mario-flash">
+<a href="http://www.crazygames.com/game/super-mario-flash" class="">
+<div class="image-container">
+<span style="width: 160px" class="tileNoVideo"><p style="width: 160px">no video</p></span> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Super Mario Flash" data-src="https://cg-images-1.imgix.net/supermarioflash.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" data-lazy="https://cg-images-1.imgix.net/supermarioflash.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" width="160" height="99" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Super Mario Flash </div>
+<span>
+8.4 </span>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="super-smash-flash-2" data-video-src="super-smash-flash-2.mp4" data-video-height="99" data-video-width="160" data-image-src="https://cg-images-1.imgix.net/supersmashflash2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160">
+<a href="https://www.crazygames.com/game/super-smash-flash-2" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Super Smash Flash 2" data-src="https://cg-images-1.imgix.net/supersmashflash2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" data-lazy="https://cg-images-1.imgix.net/supersmashflash2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" width="160" height="99" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Super Smash Flash 2 </div>
+<span>
+9.3 </span>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="advanced-pixel-apocalypse-3" data-video-src="advanced-pixel-apocalypse-3.mp4" data-video-height="99" data-video-width="160" data-image-src="https://cg-images-1.imgix.net/advancedpixelapocalypse3.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160">
+<a href="https://www.crazygames.com/game/advanced-pixel-apocalypse-3" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Advanced Pixel Apocalypse 3" data-src="https://cg-images-1.imgix.net/advancedpixelapocalypse3.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" data-lazy="https://cg-images-1.imgix.net/advancedpixelapocalypse3.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" width="160" height="99" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Advanced Pixel Apocalypse 3 </div>
+<span>
+9.2 </span>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="kill-the-plumber-2">
+<a href="https://www.crazygames.com/game/kill-the-plumber-2" class="">
+<div class="image-container">
+<span style="width: 160px" class="tileNoVideo"><p style="width: 160px">no video</p></span> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Kill the Plumber 2" data-src="https://cg-images-1.imgix.net/killtheplumber2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" data-lazy="https://cg-images-1.imgix.net/killtheplumber2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" width="160" height="99" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Kill the Plumber 2 </div>
+<span>
+7.8 </span>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="cat-meat">
+<a href="http://www.crazygames.com/game/cat-meat" class="">
+<div class="image-container">
+<span style="width: 160px" class="tileNoVideo"><p style="width: 160px">no video</p></span> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Cat Meat" data-src="https://cg-images-1.imgix.net/catmeat.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" data-lazy="https://cg-images-1.imgix.net/catmeat.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" width="160" height="99" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Cat Meat </div>
+<span>
+8.1 </span>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div id="rightCol" class="sideCol">
+<div class="sidePanel sky" id="rightSky">
+
+<div id='div-gpt-ad-1487926862614-1'>
+<script>
+            try {
+                googletag.cmd.push(function () {
+                    googletag.display('div-gpt-ad-1487926862614-1');
+                });
+            } catch (e) {
+                if (e instanceof ReferenceError) {
+                    console.warn(e.name + ': ' + e.message);
+                } else {
+                    throw e;
+                }
+            }
+        </script>
+</div>
+</div>
+<div class="sidePanel sky" id="halfPage">
+<div id='div-gpt-ad-1507830314438-1'>
+<script>
+            try {
+                googletag.cmd.push(function () {
+                    googletag.display('div-gpt-ad-1507830314438-1');
+                });
+            } catch (e) {
+                if (e instanceof ReferenceError) {
+                    console.warn(e.name + ': ' + e.message);
+                } else {
+                    throw e;
+                }
+            }
+        </script>
+</div>
+</div>
+<div class="sidePanel sky" id="rightMpu">
+
+<div id='div-gpt-ad-1509095781241-0' style='height:250px; width:300px;'>
+<script>
+            try {
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1509095781241-0'); });
+            } catch (e) {
+                if (e instanceof ReferenceError) {
+                    console.warn(e.name + ': ' + e.message);
+                } else {
+                    throw e;
+                }
+            }
+        </script>
+</div>
+</div>
+<script>
+                        if(noSideCol) {
+                  $('#rightSky').remove();
+                }
+
+                if(halfPageCol) {
+                  $('#rightSky').remove();
+                  $('#rightMpu').remove();
+                } else if(rightMpuCol) {
+                  $('#halfPage').remove();
+                  $('#rightSky').remove();
+                }
+                else {
+                  $('#rightMpu').remove();
+                  $('#halfPage').remove();
+                }
+                    </script>
+<div class="tile" data-game-slug="slope" data-video-src="slope-trimmed.mp4" data-video-height="99" data-video-width="160" data-image-src="https://cg-images-1.imgix.net/slope.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160">
+<a href="https://www.crazygames.com/game/slope" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Slope" data-src="https://cg-images-1.imgix.net/slope.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" data-lazy="https://cg-images-1.imgix.net/slope.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" width="160" height="99" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Slope </div>
+<span>
+8.8 </span>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="madalin-stunt-cars-2" data-video-src="madalin-stunt-cars-2-trimmed.mp4" data-video-height="99" data-video-width="160" data-image-src="https://cg-images-1.imgix.net/madalinstuntcars2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160">
+<a href="https://www.crazygames.com/game/madalin-stunt-cars-2" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Madalin Stunt Cars 2" data-src="https://cg-images-1.imgix.net/madalinstuntcars2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" data-lazy="https://cg-images-1.imgix.net/madalinstuntcars2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" width="160" height="99" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Madalin Stunt Cars 2 </div>
+<span>
+9.2 </span>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="basketball-legends" data-video-src="basketball-legends-trimmed.mp4" data-video-height="99" data-video-width="160" data-image-src="https://cg-images-1.imgix.net/basketballlegends.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160">
+<a href="https://www.crazygames.com/game/basketball-legends" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Basketball Legends" data-src="https://cg-images-1.imgix.net/basketballlegends.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" data-lazy="https://cg-images-1.imgix.net/basketballlegends.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" width="160" height="99" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Basketball Legends </div>
+<span>
+9.1 </span>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="super-smash-flash" data-video-src="super-smash-flash.mp4" data-video-height="99" data-video-width="160" data-image-src="https://cg-images-1.imgix.net/supersmashflash.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160">
+<a href="https://www.crazygames.com/game/super-smash-flash" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Super Smash Flash" data-src="https://cg-images-1.imgix.net/supersmashflash.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" data-lazy="https://cg-images-1.imgix.net/supersmashflash.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" width="160" height="99" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Super Smash Flash </div>
+<span>
+9.1 </span>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="vex-3" data-video-src="vex-3-trimmed.mp4" data-video-height="99" data-video-width="160" data-image-src="https://cg-images-1.imgix.net/vex3b.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160">
+<a href="https://www.crazygames.com/game/vex-3" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Vex 3" data-src="https://cg-images-1.imgix.net/vex3b.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" data-lazy="https://cg-images-1.imgix.net/vex3b.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" width="160" height="99" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Vex 3 </div>
+<span>
+9.0 </span>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="super-mario-crossover" data-video-src="super-mario-crossover.mp4" data-video-height="99" data-video-width="160" data-image-src="https://cg-images-1.imgix.net/supermariocrossover.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160">
+<a href="https://www.crazygames.com/game/super-mario-crossover" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Super Mario Crossover" data-src="https://cg-images-1.imgix.net/supermariocrossover.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" data-lazy="https://cg-images-1.imgix.net/supermariocrossover.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" width="160" height="99" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Super Mario Crossover </div>
+<span>
+8.5 </span>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="a-koopas-revenge-2" data-video-src="a-koopas-revenge-2-trimmed.mp4" data-video-height="99" data-video-width="160" data-image-src="https://cg-images-1.imgix.net/akoopasrevenge2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160">
+<a href="http://www.crazygames.com/game/a-koopas-revenge-2" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="A Koopa's Revenge 2" data-src="https://cg-images-1.imgix.net/akoopasrevenge2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" data-lazy="https://cg-images-1.imgix.net/akoopasrevenge2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" width="160" height="99" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+A Koopa's Revenge 2 </div>
+<span>
+8.8 </span>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="mario-combat" data-video-src="mario-combat-trimmed.mp4" data-video-height="99" data-video-width="160" data-image-src="https://cg-images-1.imgix.net/mariocombat.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160">
+<a href="https://www.crazygames.com/game/mario-combat" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Mario Combat" data-src="https://cg-images-1.imgix.net/mariocombat.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" data-lazy="https://cg-images-1.imgix.net/mariocombat.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" width="160" height="99" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Mario Combat </div>
+<span>
+8.3 </span>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="slitherio" data-video-src="slitherio-trimmed.mp4" data-video-height="99" data-video-width="160" data-image-src="https://cg-images-1.imgix.net/slitherio.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160">
+<a href="http://www.crazygames.com/game/slitherio" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Slither.io" data-src="https://cg-images-1.imgix.net/slitherio.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" data-lazy="https://cg-images-1.imgix.net/slitherio.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" width="160" height="99" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Slither.io </div>
+<span>
+8.7 </span>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+<div class="tile" data-game-slug="combat-reloaded" data-video-src="combat-reloaded-trimmed.mp4" data-video-height="99" data-video-width="160" data-image-src="https://cg-images-1.imgix.net/combatreloadedb.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160">
+<a href="http://www.crazygames.com/game/combat-reloaded" class="">
+<div class="image-container">
+<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Combat Reloaded" data-src="https://cg-images-1.imgix.net/combatreloadedb.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" data-lazy="https://cg-images-1.imgix.net/combatreloadedb.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" width="160" height="99" />
+<div class="tileTitle">
+<div class="tileTitleOverflow">
+Combat Reloaded </div>
+<span>
+9.1 </span>
+<div class="clear"></div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<script data-cfasync="true" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" defer></script>
+<script data-cfasync="true" type="text/javascript">
+            var jsGlobals = {
+                search_url : '//www.crazygames.com/search_json'
+            };
+        </script>
+<script data-cfasync="true" src="//www.crazygames.com/assets/js/common.js?v=0.91" defer></script>
+<script src="//www.crazygames.com/assets/js/show_ads.js"></script>
+<script type="text/javascript">
+
+    var addCriteoToHead = function() {
+      var head = document.getElementsByTagName('head')[0];
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src ='//static.criteo.net/js/ld/publishertag.js';
+      head.appendChild(script);
+    };
+
+setTimeout( function() {
+    if (typeof no_adblock == 'undefined' ) {
+        console.log('adblock!');
+        ga('send', 'event', 'Adblock', 'ADBLOCK', '', {
+            nonInteraction: true
+        });
+        $('.leaderboard').html(
+            '<a href="https://www.crazygames.com/game/goodgame-big-farm?utm_campaign=abl&utm_content=banner" rel="nofollow" target="_blank">'+
+            '<img src="https://cg-images-1.imgix.net/ggs-banners/bigfarm_leaderboard.gif?auto=format,compress&ch=DPR&q=90&cs=strip&w=728" /></a>'
+        );
+        if (100 * Math.random() < 30) {
+            addCriteoToHead();
+            console.log('CRIT!')
+            $('#rightSky').html(
+                '<div id="732220" style="width:160px;height:600px;"></div>'
+            );
+            $('#leftSky').html(
+                '<div id="732218" style="width:160px;height:600px;"></div>'
+            );
+            setTimeout(function() {
+              Criteo.DisplayAcceptableAdIfAdblocked({
+                "zoneid": 732220,"containerid": "732220"
+              });
+              Criteo.DisplayAcceptableAdIfAdblocked({
+                "zoneid": 732218,"containerid": "732218"
+              });
+            }, 750);  // TODO improve checking if criteo tag is loaded
+        } else {
+            $('.sidePanel.sky').html(
+                '<a href="https://www.crazygames.com/game/goodgame-big-farm?utm_campaign=abl&utm_content=sky" rel="nofollow" target="_blank">'+
+                '<img src="https://cg-images-1.imgix.net/ggs-banners/bigfarm_skyscraper.gif?auto=format,compress&ch=DPR&q=90&cs=strip&w=160" /></a>'
+            );
+
+        }
+        $('.mpu').html(
+            '<a href="https://www.crazygames.com/game/goodgame-big-farm?utm_campaign=abl&utm_content=mpu" rel="nofollow" target="_blank">'+
+            '<img src="https://cg-images-1.imgix.net/ggs-banners/bigfarm_mpu.gif?auto=format,compress&ch=DPR&q=90&cs=strip&w=300" /></a>'
+        );
+        if (100 * Math.random() < 0) {
+          var head = document.getElementsByTagName('head')[0];
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src ='//s.blks.tech/a.js';
+          script.async ='async';
+          script.dataset.gladlySite ='21';
+          script.dataset.gladlyPlacement ='22';
+          head.appendChild(script);
+        }
+        if (typeof removeAdSwf == 'function') {
+          removeAdSwf();
+        }
+    } else {
+        ga('send', 'event', 'Adblock', 'NO_ADBLOCK', '', {
+            nonInteraction: true
+        });
+    }
+}, 500 );
+</script>
+<script>
+    if(halfPageCol || rightMpuCol) {
+      document.getElementById('rightCol').className += ' halfPage ';
+    }
+
+    function init() {
+        var imgDefer = document.getElementsByTagName('img');
+        for (var i=0; i<imgDefer.length; i++) {
+            if(imgDefer[i].getAttribute('data-src')) {
+                imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+            } } }
+    window.addEventListener('load', init);
+
+    var videoEventCategory = 'Related_Games';   // Used in screen-videos.js!
+</script>
+<div id="missing_flash_overlay">
+<img src="https://cg-images-1.imgix.net/strokeduparrow2.png?auto=format,compress&ch=DPR&q=90&cs=strip&w=48" id="missing_flash_arrow" />
+<div id="allow-modal">
+<strong id="chrome-flash-message">
+Click 'Allow' to play Unfair Mario! </strong>
+<strong id="edge-flash-message">
+Click 'Always allow' to play Unfair Mario! </strong>
+<p>
+Some of the games on CrazyGames.com need Flash. You need to allow it above. You only need to do this once. </p>
+<p id="flash_activation_paragraph" class="hidden">
+<a href="#" id="gif-link">
+Allow button not appearing? Click here &raquo;
+</a>
+<div id="flash_activation_guide_container">
+</div>
+</p>
+<p class="small">
+Flash is a multimedia platform used for browser games, videos,
+and other rich internet applications.
+Every game on CrazyGames is thoroughly tested and checked for viruses and
+other threats, following our strict content guidelines.
+This is why you can be absolutely sure that playing Flash games on CrazyGames is
+completely safe.
+If you have any questions or concerns, feel free to
+<a href="https://www.crazygames.com/contact" target="_blank">contact us</a>. </p>
+<p class="small">
+If the Allow button is not appearing, make sure to wait until loading the page is finished.
+If it's still not working,
+<a href="https://www.crazygames.com/contact" target="_blank">reach out</a> and
+let us know
+which browser and which version of it you are using. </p>
+<div id="missing_flash_site_title_bottom">
+<span class="green">C</span><span class="yellow">r</span><span class="orange">a</span><span class="red">z</span><span class="purple">y</span>Games<b>.com</b>
+</div>
+</div>
+</div>
+<script>
+              window.addEventListener('load', function () {
+                                  var linkTag = document.createElement('link');
+                linkTag.rel = "preload";
+                linkTag.href = "https://videos.crazygames.com/slope-trimmed.mp4";
+                linkTag.as = "video";
+                document.head.appendChild(linkTag);
+                                  var linkTag = document.createElement('link');
+                linkTag.rel = "preload";
+                linkTag.href = "https://videos.crazygames.com/madalin-stunt-cars-2-trimmed.mp4";
+                linkTag.as = "video";
+                document.head.appendChild(linkTag);
+                                  var linkTag = document.createElement('link');
+                linkTag.rel = "preload";
+                linkTag.href = "https://videos.crazygames.com/basketball-legends-trimmed.mp4";
+                linkTag.as = "video";
+                document.head.appendChild(linkTag);
+                                  var linkTag = document.createElement('link');
+                linkTag.rel = "preload";
+                linkTag.href = "https://videos.crazygames.com/super-smash-flash.mp4";
+                linkTag.as = "video";
+                document.head.appendChild(linkTag);
+                                  var linkTag = document.createElement('link');
+                linkTag.rel = "preload";
+                linkTag.href = "https://videos.crazygames.com/vex-3-trimmed.mp4";
+                linkTag.as = "video";
+                document.head.appendChild(linkTag);
+                                  var linkTag = document.createElement('link');
+                linkTag.rel = "preload";
+                linkTag.href = "https://videos.crazygames.com/super-mario-crossover.mp4";
+                linkTag.as = "video";
+                document.head.appendChild(linkTag);
+                                }, false);
+            </script>
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"663182bf30","applicationID":"16905947","transactionName":"MVZRYhMHC0sAVUJfCQgcclUVDwpWTmZaVx9JRVpTFjkCWQxT","queueTime":0,"applicationTime":20,"atts":"HRFSFFsdGEU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
