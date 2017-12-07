@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "description": "Safan41's official website",
   "main": "index.js",
-  "dependencies": {"coveralls": "^2.12.0"},
+ "dependencies": {},
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-markdown": "^1.0.0-beta.6"},
   "devDependencies": {},
   "scripts": {
+    "lint": "eslint . --ext .json --ext .md",
+    "pretest": "npm run lint",
+    "test": "echo \"No tests\""
     "test": "npm install coveralls --save-dev"
   },
   "repository": {
