@@ -24,3 +24,8 @@
   },
   "homepage": "https://github.com/safan41/safan41.github.io#readme"
 }
+"scripts": {
+  "lint": "./node_modules/.bin/eslint **/*.js",
+  "build": "...",
+  "test": "..."
+ }
