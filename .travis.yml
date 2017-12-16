@@ -10,7 +10,7 @@ sudo: false
 after_script:
 - "npm run test:cov"
 - "npm install coveralls && cat ./coverage/lcov.info | coveralls"
-
+- "npm install monaco-editor"
 
 
 
