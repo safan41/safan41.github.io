@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wrassling</title>
+	<meta name="description" content="Start rotating your arms and try to throw your opponents out of the ring in Wrassling. Play a challenging 1 player mode in which you can unlock new achievements like hats and play a local 2 player match against a friend in VS or Co-op Mode. The wrassle boss mode is exclusive to 2player.com! Controls: 
+
+1P mode: Use Z and X to rotate arms and arrow keys to move and jump.
+2P mode: Player 1 use WASD and X, C and Player 2: Use arrow keys and O, P. ">
+	<meta name="keywords" content="">
+			<meta property="og:type" content="game">
+		<meta property="og:site_name" content="2Player.com">
+		<meta property="og:title" content="Wrassling">
+		<meta property="og:url" content="http://www.2player.com/fighting-games/wrassling.html">
+		<meta property="og:image" content="http://www.2player.com/cdn/games/wrassling-en.jpg">
+		<meta property="og:description" content="Start rotating your arms and try to throw your opponents out of the ring in Wrassling. Play a challenging 1 player mode in which you can unlock new achievements like hats and play a local 2 player match against a friend in VS or Co-op Mode. The wrassle boss mode is exclusive to 2player.com! Controls: 
+
+1P mode: Use Z and X to rotate arms and arrow keys to move and jump.
+2P mode: Player 1 use WASD and X, C and Player 2: Use arrow keys and O, P. ">
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="alternate" hreflang="nl" href="http://www.2player.com/nl/vecht-spelletjes/wrassling.html"/>
+<link rel="alternate" hreflang="pt-br" href="http://www.2player.com/pt-br/jogos-de-luta/wrassling.html"/>
+<link rel="stylesheet" href="http://www.2player.com/assets/styles/layout.css">	
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+</head>
+<body>
+	
+			<div class="clear"></div>
+		</article>
+
+		<div class="clear"></div>
+
+		<article class="play-bar">
+			<div class="game">
+										<div id="game-placeholder">
+												<div id="adContainer" style="width: 600px; height: 420px; display: inline-block;"></div>
+						<script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+						<script type="text/javascript">
+							var videoContent = document.getElementById('game-placeholder');
+							var adDisplayContainer = new google.ima.AdDisplayContainer(document.getElementById('adContainer'), videoContent);
+							var adsManager = null;
+
+							var  adsLoader = new google.ima.AdsLoader(adDisplayContainer);
+							adsLoader.addEventListener(google.ima.AdsManagerLoadedEvent.Type.ADS_MANAGER_LOADED, onAdsManagerLoaded, false);
+							adsLoader.addEventListener(google.ima.AdErrorEvent.Type.AD_ERROR, onAdError, false);
+							 // Request video ads.
+							var adsRequest = new google.ima.AdsRequest();
+							adsRequest.adTagUrl = 'http://googleads.g.doubleclick.net/pagead/ads?ad_type=video_image_text&client=ca-games-pub-3604295324960334&channel=3079672575&videoad_start_delay=0&description_url=http%3A%2F%2Fwww.2player.com%2Ffighting-games%2Fwrassling.html&max_ad_duration=5000&hl=nl&sdmax=120000';
+
+							// Specify the linear and nonlinear slot sizes. This helps the SDK to
+							// select the correct creative if multiple are returned.
+
+							adsRequest.linearAdSlotWidth = 600;
+							adsRequest.linearAdSlotHeight = 420;
+							adsRequest.nonLinearAdSlotWidth = 600;
+							adsRequest.nonLinearAdSlotHeight = 420;
+							adsRequest.forceNonLinearFullSlot = true;
+							adsLoader.requestAds(adsRequest);
+
+							function onAdsManagerLoaded(adsManagerLoadedEvent) {
+								// Get the ads manager.
+								var adsRenderingSettings = new google.ima.AdsRenderingSettings();
+								adsRenderingSettings.restoreCustomPlaybackStateOnAdBreakComplete = true;
+								// videoContent should be set to the content video element.
+								adsManager = adsManagerLoadedEvent.getAdsManager(videoContent, adsRenderingSettings);
+
+								adsManager.addEventListener(google.ima.AdErrorEvent.Type.AD_ERROR, onAdError);
+								adsManager.addEventListener(google.ima.AdEvent.Type.ALL_ADS_COMPLETED, onAdEvent);
+								adsManager.addEventListener(google.ima.AdEvent.Type.LOADED, onAdEvent);
+								adsManager.addEventListener(google.ima.AdEvent.Type.STARTED, onAdEvent);
+								adsManager.addEventListener(google.ima.AdEvent.Type.COMPLETE, onAdEvent);
+								adsManager.addEventListener(google.ima.AdEvent.Type.SKIPPED, onAdEvent);
+								adsManager.addEventListener(google.ima.AdEvent.Type.USER_CLOSE, onAdEvent);
+
+								setTimeout(function() {
+									adDisplayContainer.initialize();
+									try {
+										// Initialize the ads manager. Ad rules playlist will start at this time.
+										adsManager.init(600, 420, google.ima.ViewMode.NORMAL);
+										// Call play to start showing the ad. Single video and overlay ads will
+										// start at this time; the call will be ignored for ad rules.
+										adsManager.start();
+									  } catch (adError) {
+										// An error may be thrown if there was a problem with the VAST response.
+										removePreloader();
+									  }
+								 }, 0);
+							}
+
+							function onAdEvent(adEvent) {
+								// Retrieve the ad from the event. Some events (e.g. ALL_ADS_COMPLETED)
+								// don't have ad object associated.
+								var ad = adEvent.getAd();
+								switch (adEvent.type) {
+								  case google.ima.AdEvent.Type.LOADED:
+									// This is the first event sent for an ad - it is possible to
+									// determine whether the ad is a video ad or an overlay.
+									if (!ad.isLinear()) {
+									  // Position AdDisplayContainer correctly for overlay.
+									  // Use ad.width and ad.height.
+									  removePreloader();
+									}
+									break;
+								  case google.ima.AdEvent.Type.STARTED:
+									// This event indicates the ad has started - the video player
+									// can adjust the UI, for example display a pause button and
+									// remaining time.
+									if (ad.isLinear()) {
+									  // For a linear ad, a timer can be started to poll for
+									  // the remaining time.
+									  intervalTimer = setInterval(
+										  function() {
+											var remainingTime = adsManager.getRemainingTime();
+										  },
+										  300); // every 300ms
+									}
+									break;
+								  case google.ima.AdEvent.Type.COMPLETE:
+								  case google.ima.AdEvent.Type.USER_CLOSE:
+									// This event indicates the ad has finished - the video player
+									// can perform appropriate UI actions, such as removing the timer for
+									// remaining time detection.
+									if (ad.isLinear()) {
+									  clearInterval(intervalTimer);
+									}
+
+									removePreloader();
+									break;
+								  case google.ima.AdEvent.Type.SKIPPED:
+										removePreloader();
+									break;
+								}
+							}
+
+							function onAdError(adErrorEvent) {
+								// Handle the error logging.
+								console.log(adErrorEvent.getError());
+								if (adsManager) {
+									adsManager.destroy();
+								}
+								removePreloader();
+							}
+
+							function removePreloader() {
+																	document.getElementById('game-placeholder').innerHTML = '<object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="600" height="420" align="middle"><param name="allowFullScreen" value="true"><param name="movie" value="http://www.2player.com/cdn/files/wrassling.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /><embed src="http://www.2player.com/cdn/files/wrassling.swf" quality="high" bgcolor="#FFFFFF" width="600" height="420" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer"></object>';
+															}
+						</script>
+						</div>
+								<!-- Go to www.addthis.com/dashboard to customize your tools -->
+				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4dd9824d1756fc44" async="async"></script>
+				<!-- Go to www.addthis.com/dashboard to customize your tools -->
+				<div class="addthis_native_toolbox" style="display: inline-block; padding: 10px 0;"></div>
+			</div>
+
+			<div class="text">
+				<div class="left">
+					<h4>Wrassling</h4>
+					<p>
+						Start rotating your arms and try to throw your opponents out of the ring in Wrassling. Play a challenging 1 player mode in which you can unlock new achievements like hats and play a local 2 player match against a friend in VS or Co-op Mode. The wrassle boss mode is exclusive to 2player.com! Controls: 
+
+1P mode: Use Z and X to rotate arms and arrow keys to move and jump.
+2P mode: Player 1 use WASD and X, C and Player 2: Use arrow keys and O, P. 					</p>
+			
+			</footer>
+		</section>
+	</section>
+	<script type="text/javascript">var PREFIX = "http://www.2player.com/"; var LANG = "en";</script>
+	<script type="text/javascript" src="http://www.2player.com/assets/scripts/jquery.js"></script>
+</body>
+</html>
