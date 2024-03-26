@@ -64,7 +64,7 @@ const Navbar = () => {
               key="resume"
               className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer"
             >
-              <a href={`#resume`}>Resume</a>
+              <a href="/public/resume.pdf">Resume</a>
             </li>
         </ul>
 
