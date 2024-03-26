@@ -60,6 +60,12 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          <li
+              key="resume"
+              className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer"
+            >
+              <a href={`#resume`}>Resume</a>
+            </li>
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
