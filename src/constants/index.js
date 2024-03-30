@@ -23,7 +23,8 @@ import {
   jobit,
   tripguide,
   threejs,
-  wordbox
+  wordbox,
+  wikimedia
 } from "../assets";
 
 export const navLinks = [
@@ -118,9 +119,9 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Contributor",
+    company_name: "Wikimedia Foundation",
+    icon: wikimedia,
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [
@@ -194,47 +195,68 @@ const projects = [
     source_code_link: "https://github.com/CCHSFBLA23/wordgame",
   },
   {
-    name: "Job IT",
+    name: "shrek",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Discord bot made for Repl.it's 2020 Discord Bot Competiton. Recieved an Honorable Mention",
     tags: [
       {
-        name: "react",
+        name: "discord",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "shrek",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "python",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/safan41/shrek",
   },
   {
-    name: "Trip Guide",
+    name: "Traffic Simulator",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A WIP Traffic Simulator composed in Elixir. Just making it so I can learn the language.",
     tags: [
       {
-        name: "nextjs",
+        name: "elixir",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "traffic",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "genserver",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
     source_code_link: "https://github.com/",
   },
+  {
+    name: "YGKS",
+    description:
+      "An NAQT You Gotta Know List scraper written in Python. Exports to Anki Flashcards.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "beautifulsoup4",
+        color: "green-text-gradient",
+      },
+      {
+        name: "anki",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/safan41/YGKS",
+  }
 ];
 
 export { services, technologies, experiences, projects };
