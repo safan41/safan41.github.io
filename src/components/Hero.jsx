@@ -23,7 +23,7 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I make things sometimes. <br className='xs:block hidden' />
-            CCHS &lsquo;24 -> UIUC &lsquo;28
+            UIUC &lsquo;28
           </p>
           <div className="pt-5 grid grid-flow-col gap-4 md:place-self-center md:justify-self-end">
             <a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/safan25641/'><FaInstagram size={48} className="fill-slate-400 hover:fill-slate-500" /></a>
